@@ -81,6 +81,8 @@ ul{
     margin-right:18px;
     margin-left:130px;
     margin-top:10px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
 
 }
 
