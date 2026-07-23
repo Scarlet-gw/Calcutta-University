@@ -1,0 +1,941 @@
+/*==================================================
+  UNIVERSITY OF CALCUTTA
+  M.COM ADMISSION CLONE
+===================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Roboto',sans-serif;
+    background:#f5f5f5;
+    color:#222;
+    overflow-x:hidden;
+    margin:0;
+    padding:0;
+
+}
+
+/*==========================================
+            LINKS
+==========================================*/
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+/*==========================================
+            HEADER
+==========================================*/
+
+.top-header{
+
+    width:100%;
+    height:112px;
+
+    background:#2f428d;
+
+}
+
+.header-container{
+
+    width:1540px;
+    height:100px;
+
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+/*==========================================
+            LOGO SECTION
+==========================================*/
+
+.logo-section{
+
+    display:flex;
+    align-items:center;
+
+}
+
+.logo-section img{
+
+    width:80px;
+    height:80px;
+
+    margin-right:18px;
+    margin-left:130px;
+    margin-top:10px;
+
+}
+
+/*==========================================
+            UNIVERSITY NAME
+==========================================*/
+
+.heading h3{
+
+    color:#fff;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    margin-bottom:3px;
+    margin-top:10px;
+
+}
+
+.heading h1{
+
+    color:#fff;
+
+    font-size:38px;
+
+    font-weight:700;
+
+    letter-spacing:-1px;
+
+}
+
+/*==========================================
+            HELP DESK
+==========================================*/
+
+.helpdesk{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    margin-right:130px;
+
+}
+
+.helpdesk i{
+
+    font-size:58px;
+
+    margin-bottom:8px;
+    margin-top:10px;
+
+}
+
+.helpdesk img{
+
+    width:48px;
+    height:auto;
+    margin-bottom:8px;
+    margin-top:10px;
+
+}
+
+.helpdesk span{
+
+    font-size:13px;
+
+    font-weight:500;
+
+}
+
+/*==========================================
+            NAVBAR
+==========================================*/
+
+.navbar{
+
+    width:100%;
+    background:#333333;
+    min-height:75px;
+    padding:10px 0;
+
+}
+
+.navbar ul{
+
+    width:1540px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+    flex-wrap:wrap;
+    gap:5px 20px;
+
+}
+
+.navbar li{
+
+    margin:0;
+
+}
+
+.navbar .nav-break{
+
+    flex-basis:100%;
+    height:0;
+    margin:0;
+
+}
+
+.navbar a{
+
+    color:white;
+
+    font-size:13px;
+    letter-spacing:0.5px;
+    font-weight:400;
+
+    transition:.25s;
+
+}
+
+.navbar a:hover{
+
+    color:#ffff33;
+
+}
+
+.navbar .active a{
+
+    color:#ffff33;
+
+}
+
+.navbar i{
+
+    font-size:25px;
+
+}
+
+/*==========================================
+            HERO
+==========================================*/
+
+.hero{
+
+    width:100vw;
+    margin-left:calc(50% - 50vw);
+    height:250px;
+    background:url("../images/campus.jpg");
+    background-size:cover;
+    background-position:center;
+    position:relative;
+
+}
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+}
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.hero-overlay h1{
+
+    color:white;
+
+    font-size:40px;
+
+    font-weight:540;
+
+    letter-spacing:1px;
+
+    z-index:2;
+
+}
+
+/*==========================================
+            MARQUEE
+==========================================*/
+
+.marquee-section{
+
+    width:1200px;
+    max-width:85%;
+    margin:30px auto 18px;
+
+}
+
+.marquee-box{
+
+    background:#1110ff;
+
+    height:90px;
+
+    display:flex;
+
+    align-items:center;
+
+    border-radius:3px;
+
+}
+
+.marquee-box marquee{
+
+    color:white;
+
+    font-size:18px;
+    font-weight:700;
+
+}
+
+/*==========================================
+            MAIN CONTAINER
+==========================================*/
+
+.main-container{
+
+    width:1200px;
+    max-width:85%;
+    margin:0 auto 40px;
+
+}
+
+.content-wrapper{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:stretch;
+    gap:28px;
+
+}
+
+/*==========================================
+            INFORMATION PANEL
+==========================================*/
+
+.information{
+
+    width:calc(50% - 14px);
+
+    background:#fff;
+
+    border:1px solid #dddddd;
+
+    border-radius:4px;
+
+    box-shadow:0 1px 4px rgba(0,0,0,.12);
+
+    padding:16px;
+
+}
+
+.information h2{
+
+    font-size:25px;
+
+    color:#3f3d3d;
+
+    letter-spacing:0.5px;
+
+    margin-bottom:18px;
+
+    font-weight:680;
+
+}
+
+.information ul{
+
+    list-style:disc;
+
+    padding-left:22px;
+
+}
+
+.information li{
+
+    margin-bottom:4px;
+
+}
+
+/*==========================================
+        TURQUOISE BUTTONS
+==========================================*/
+
+.information li a{
+
+    background:#22a7c6;
+
+    color:white;
+
+    display:inline-flex;
+
+    align-items:center;
+    gap:8px;
+
+    min-height:48px;
+    width:100%;
+    padding:0 16px;
+
+    border:1px solid white;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    transition:.25s;
+
+}
+
+.information li a span{
+
+    display:inline-block;
+
+}
+
+.information li a:hover{
+
+    background:#1893b0;
+
+}
+
+.information li img{
+
+    height:16px;
+    flex-shrink:0;
+    display:block;
+
+}
+
+/*==========================================
+        APPLY BUTTON
+==========================================*/
+
+.apply-area{
+
+    margin-top:22px;
+
+}
+
+.apply-button{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:100%;
+
+    height:58px;
+
+    background:#20a7c6;
+
+    color:#004cb8;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    border:1px solid #1996b3;
+
+    transition:.25s;
+
+}
+
+.apply-button:hover{
+
+    background:#1896b2;
+
+    color:white;
+
+}
+
+/*==========================================
+        IMPORTANT DATES
+==========================================*/
+
+.important-dates{
+
+    width:calc(50% - 14px);
+
+    background:#fff;
+
+    border:1px solid #dddddd;
+
+    border-radius:4px;
+
+    box-shadow:0 1px 4px rgba(0,0,0,.12);
+
+    padding:16px;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.important-dates h2{
+    font-size:25px;
+
+    color:#3f3d3d;
+    
+    letter-spacing:0.5px;
+
+    margin-bottom:18px;
+
+    font-weight:680;
+
+}
+
+.dates-box{
+
+    flex:1;
+
+    min-height:0;
+
+    border:1px solid #efefef;
+
+    background:white;
+
+}
+/*==========================================
+            MERIT LIST PAGES
+==========================================*/
+
+.page-content{
+
+    width:1540px;
+
+    margin:40px auto;
+
+    background:#ffffff;
+
+    padding:35px;
+
+    border-radius:4px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.12);
+
+}
+
+.page-content h2{
+
+    text-align:center;
+
+    color:#2f428d;
+
+    font-size:34px;
+
+    margin-bottom:10px;
+
+    font-weight:700;
+
+}
+
+.page-content h3{
+
+    text-align:center;
+
+    color:#333;
+
+    font-size:22px;
+
+    margin-bottom:30px;
+
+}
+
+.category-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.category-table th{
+
+    background:#2f428d;
+
+    color:white;
+
+    padding:15px;
+
+    border:1px solid #ddd;
+
+    font-size:16px;
+
+}
+
+.category-table td{
+
+    border:1px solid #ddd;
+
+    padding:15px;
+
+    text-align:center;
+
+    font-size:15px;
+
+}
+
+.category-table tr:nth-child(even){
+
+    background:#f7f7f7;
+
+}
+
+.category-table tr:hover{
+
+    background:#eef6ff;
+
+}
+
+.category-table a{
+
+    display:inline-block;
+
+    background:#1ca4c8;
+
+    color:white;
+
+    padding:8px 18px;
+
+    border-radius:4px;
+
+    transition:.25s;
+
+    font-weight:600;
+
+}
+
+.category-table a:hover{
+
+    background:#1383a0;
+
+}
+
+/*==========================================
+            LOGIN PAGE
+==========================================*/
+
+.apply-page{
+
+    width:100%;
+
+    min-height:900px;
+
+    background:url("../images/campus.jpg") center center/cover no-repeat;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:60px 0;
+
+}
+
+.login-box{
+
+    width:500px;
+
+    background:white;
+
+    border-radius:6px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+    overflow:hidden;
+
+}
+
+.login-header{
+
+    background:#2f428d;
+
+    color:white;
+
+    text-align:center;
+
+    padding:18px;
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+.login-body{
+
+    padding:30px;
+
+}
+
+.login-body label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+.login-body input{
+
+    width:100%;
+
+    height:48px;
+
+    margin-bottom:20px;
+
+    border:1px solid #ccc;
+
+    border-radius:4px;
+
+    padding:0 12px;
+
+    font-size:15px;
+
+}
+
+.login-btn{
+
+    width:100%;
+
+    height:48px;
+
+    background:#2f428d;
+
+    color:white;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.login-btn:hover{
+
+    background:#1d2e69;
+
+}
+
+.create-account{
+
+    display:block;
+
+    margin-top:18px;
+
+    text-align:center;
+
+    color:#0b75be;
+
+    font-weight:600;
+
+}
+
+.download-btn{
+
+    display:block;
+
+    margin-top:12px;
+
+    padding:12px;
+
+    background:#1ca4c8;
+
+    color:white;
+
+    text-align:center;
+
+    border-radius:4px;
+
+}
+
+.download-btn:hover{
+
+    background:#1686a3;
+
+}
+
+/*==========================================
+            FOOTER
+==========================================*/
+
+footer{
+
+    background:#2f428d;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px 15px;
+
+    margin-top:40px;
+
+}
+
+.footer-links{
+
+    margin-bottom:15px;
+
+}
+
+.footer-links a{
+
+    color:white;
+
+    margin:0 12px;
+
+    font-size:15px;
+
+}
+
+.footer-links a:hover{
+
+    color:#ffff66;
+
+}
+
+.copyright{
+
+    font-size:14px;
+
+}
+
+/*==========================================
+            RESPONSIVE
+==========================================*/
+
+@media(max-width:1600px){
+
+    .header-container,
+    .navbar ul,
+    .marquee-section,
+    .main-container,
+    .page-content{
+
+        width:95%;
+
+    }
+
+}
+
+@media(max-width:1100px){
+
+    .content-wrapper{
+
+        flex-direction:column;
+
+    }
+
+    .information,
+    .important-dates{
+
+        width:100%;
+
+    }
+
+    .heading h1{
+
+        font-size:40px;
+
+    }
+
+    .heading h3{
+
+        font-size:20px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .navbar{
+
+        height:auto;
+
+    }
+
+    .navbar ul{
+
+        flex-direction:column;
+
+        padding:15px 0;
+
+    }
+
+    .navbar li{
+
+        margin:8px 0;
+
+    }
+
+    .hero{
+
+        height:220px;
+
+    }
+
+    .hero-overlay h1{
+
+        font-size:34px;
+
+        text-align:center;
+
+        padding:0 15px;
+
+    }
+
+    .login-box{
+
+        width:95%;
+
+    }
+
+}
